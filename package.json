@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
+  "author": "Edgar Talledos <onimenotsuki@gmail.com> (https://medium.com/@edgar.talledos)",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
