@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Impress, Step } from 'react-impressjs';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+/* styles of react-impressjs */
+import 'react-impressjs/styles/react-impressjs.css';
+
+const App = () => (
+  <Impress
+    progress={true}
+    fallbackMessage={<p>Lo sentimos, tu <b>dispositivo o navegador</b> no está soportado.</p>}
+  >
+    <Step className="slide" id="its-in-3d">
+      <h1>Hola mundo</h1>
+      <hr />
+      <p>¡React e Impressjs!</p>
+    </Step>
+  </Impress>
+);
 
 export default App;
